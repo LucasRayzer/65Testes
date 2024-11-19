@@ -1,0 +1,97 @@
+header{
+    background-color: #1E293B;
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo{
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logoImagem img{
+    height: 45px;
+    width: auto;
+}
+
+.logoDescricao p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+
+}
+
+.linksTopo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.linksTopo a{
+    color: white;
+    text-decoration: None;
+    font-size: 16px;
+}
+
+.linksTopo a:hover{
+    color: #3D485C;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 60px; 
+    right: 5;
+    background-color: #1E293B;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.linksMenu{
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: None;
+}
+
+.linksMenu:hover {
+    background-color: #817b7b;
+}
+
+a{
+    text-decoration: None;
+    color: white;
+}

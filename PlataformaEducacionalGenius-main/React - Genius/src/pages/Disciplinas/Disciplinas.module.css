@@ -1,0 +1,26 @@
+.areaDisciplinas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.cardsDisciplinas {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 1;
+}
+
+.cardsDisciplinas a{
+    text-decoration: None;
+}
+
+.footer{
+    margin-top: auto;
+}

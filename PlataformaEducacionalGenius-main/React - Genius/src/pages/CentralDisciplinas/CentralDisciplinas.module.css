@@ -1,0 +1,106 @@
+
+.containerCentralDisciplinas{
+    height: 82vh;
+}
+
+.centralDisciplinas h3{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.criarDisciplina{
+    display: block;
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 8.7%;
+}   
+
+.botaoCriar{
+    height: 30px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.formDisciplinas input {
+    display: inline;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.mostrarDisciplina{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para a tabela */
+table {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: #1E293B;
+    text-align: left;
+    padding: 8px;
+}
+
+td a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Estilo para as células da tabela */
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.busca{
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 20%;
+}
+
+.alerta{
+    margin-left: 10%;
+    margin-top: 20px;
+    color: red;
+}
+
+.botaoBuscar{
+    height: 30px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.botaoCancelar{
+    height: 30px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    width: 80px;
+}

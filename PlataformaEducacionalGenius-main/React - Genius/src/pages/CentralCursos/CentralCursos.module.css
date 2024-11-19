@@ -1,0 +1,92 @@
+
+.containerCentralCursos{
+    height: 82vh;
+}
+
+.centralCursos h3{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.criarCurso{
+    display: block;
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 8.7%;
+}   
+
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.botaoCriar{
+    height: 30px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.botaoCancelar{
+
+    height: 30px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    margin-bottom: 20px;
+    width: 80px;
+
+}
+
+.formCursos input {
+    display: inline;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.mostrarCursos{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para a tabela */
+table {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: #1E293B;
+    text-align: left;
+    padding: 8px;
+}
+
+td a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Estilo para as células da tabela */
+td {
+    text-align: left;
+    padding: 8px;
+}

@@ -1,0 +1,35 @@
+.tituloSecao{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #0F172A;
+    box-sizing: border-box;
+}
+
+.tituloSecao h3{
+    word-wrap: break-word;
+    white-space: normal; 
+}
+
+.containerSecao{
+    padding: 20px;
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.descricaoSecao{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 30vh;
+    padding: 20px;
+    border: 1px solid #0F172A;
+    text-align: start;
+
+}
+
+.descricaoSecao p {
+    word-wrap: break-word;
+    white-space: normal; 
+}

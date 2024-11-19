@@ -1,0 +1,54 @@
+.secaoPerfil{
+    padding: 40px;
+    text-align: start;
+    height: 74vh;
+}
+
+.editarSenha{
+    width: 30%;
+}
+
+.editarEmail{
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.editarEmail input{
+    width: 300px;
+    margin-right: 10px;
+}
+
+.editarEmail form{
+    margin-top: 15px;
+
+}
+
+.editarEmail button{
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.editarSenha input{
+    width: 300px;
+    margin-right: 10px;
+}
+
+.editarSenha form{
+    margin-top: 15px;
+}
+
+.editarSenha button{
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: beige;
+    width: 120px;
+}

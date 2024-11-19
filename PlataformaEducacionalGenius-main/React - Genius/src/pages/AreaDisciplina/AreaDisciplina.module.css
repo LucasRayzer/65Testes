@@ -1,0 +1,29 @@
+
+.containerAreaDisciplina{
+    height: 82vh;
+}
+.disciplina{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    margin-left: 160px;
+}
+
+.bordaSecoes{
+    display: flex;
+    justify-content: center;
+}
+
+.secoes{
+    text-align: center;
+    width: 80%;
+    background-color: #1E293B;
+    border-radius: 20px;
+}
+
+.disciplina a{
+    margin-right: 50px;
+    color: white;
+    text-decoration: None;
+    font-size: 30px;
+}

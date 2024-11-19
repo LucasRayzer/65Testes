@@ -1,0 +1,45 @@
+
+.containerAreaControleDisciplina{
+    height: 82vh;
+}
+.controleDisciplina{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    margin-left: 160px;
+}
+
+.controleDisciplina a{
+    margin-right: 50px;
+    color: white;
+    text-decoration: None;
+    font-size: 30px;
+}
+
+.novaSecao{
+    width: 70%;
+    align-items: start;
+}
+
+.novaSecao input {
+    width: 60.5%;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.novaSecao textarea {
+    background-color: #1E293B;
+}
+
+.novaSecao button{
+    margin-top: 7px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    background-color: #1E293B;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+}
+
