@@ -1,4 +1,4 @@
-package udesc.genius;
+package udesc.genius.Unitarios;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -73,7 +73,7 @@ public class UsuarioCursoControllerTests {
     //CT13 passa já que foi testado os métodos que não foram chamados
     @Test
     public void testAdicionarCursoAlunoInexistente() {
-        
+
         UUID idUsuarioInexistente = UUID.randomUUID();
         UUID idCurso = cursoModel.getIdCurso();
 
