@@ -129,7 +129,7 @@ public class DisciplinaControllerTests {
         verify(disciplinaRepository, times(1)).findById(idDisciplina);
         verify(disciplinaRepository, times(1)).save(any(DisciplinaModel.class));
     }
-    //CT17
+    //CT17 Passa, não está adicionando professor inexistente
     @Test
     public void testAlocarProfessorInexistenteEmDisciplina() {
         // Criação de uma disciplina válida
