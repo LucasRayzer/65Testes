@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.CascadeType;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import java.util.ArrayList;
 
 import lombok.Data;
 
@@ -40,6 +42,6 @@ public class DisciplinaModel implements Serializable{
     @JoinColumn(name="idProfessor")
     private UsuarioModel professor;
 
-    @OneToMany (mappedBy="disciplina", orphanRemoval = true)
-    private List<SecaoModel> secoes;
+    @OneToMany(mappedBy = "disciplina", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<SecaoModel> secoes = new ArrayList<>();
 }

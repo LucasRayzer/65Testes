@@ -1,5 +1,6 @@
 package udesc.genius.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.io.Serializable;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.JoinTable;
+import java.util.ArrayList;
 
 import lombok.Data;
 
@@ -44,6 +46,11 @@ public class UsuarioModel implements Serializable {
     )
     private List<CursoModel> cursos;
 
-    @OneToMany(mappedBy = "professor", orphanRemoval = false)
-    private List<DisciplinaModel> disciplinas;
+    @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonBackReference
+    private List<DisciplinaModel> disciplinas = new ArrayList<>();
+    
+    public UsuarioModel() {
+    this.cursos = new ArrayList<>();
+}
 }
