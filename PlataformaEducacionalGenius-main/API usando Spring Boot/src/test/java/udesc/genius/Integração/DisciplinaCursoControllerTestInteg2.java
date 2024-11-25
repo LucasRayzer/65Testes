@@ -1,24 +1,26 @@
 package udesc.genius.Integração;
 
+import jakarta.transaction.Transactional;
 import java.util.UUID;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import udesc.genius.controllers.DisciplinaController;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import udesc.genius.models.CursoModel;
 import udesc.genius.models.DisciplinaModel;
 import udesc.genius.repositories.CursoRepository;
 import udesc.genius.repositories.DisciplinaRepository;
+import org.springframework.http.ResponseEntity;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)  
 @AutoConfigureMockMvc
 public class DisciplinaCursoControllerTestInteg2 {
-
-    @Autowired
-    private DisciplinaController disciplinaController;
 
     @Autowired
     private CursoRepository cursoRepository;
@@ -34,6 +36,7 @@ public class DisciplinaCursoControllerTestInteg2 {
 
     @BeforeEach
     void setUp() {
+        // Criando o curso
         CursoModel curso = new CursoModel();
         curso.setTitulo("Engenharia de Software");
         curso = cursoRepository.save(curso);
@@ -47,7 +50,9 @@ public class DisciplinaCursoControllerTestInteg2 {
     }
 
     @Test
+    @Transactional
     void testDeletarDisciplinaDeCurso() {
-      
+    
     }
+
 }
