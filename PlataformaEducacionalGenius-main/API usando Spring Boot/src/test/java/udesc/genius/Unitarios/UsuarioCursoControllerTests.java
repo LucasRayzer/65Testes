@@ -52,21 +52,29 @@ public class UsuarioCursoControllerTests {
     //CT12 passa
     @Test
     public void testAdicionarCursoComSucesso() {
-        
+
         UUID idUsuario = UUID.randomUUID();
         UUID idCurso = UUID.randomUUID();
-
+    
         UsuarioModel usuario = new UsuarioModel();
         usuario.setIdUsuario(idUsuario);
         usuario.setNome("João Silva");
-        usuario.setCursos(new ArrayList<>()); 
-
+        usuario.setCursos(new ArrayList<>());
+    
         CursoModel curso = new CursoModel();
         curso.setIdCurso(idCurso);
         curso.setTitulo("Engenharia de Software");
-
+    
         Mockito.when(usuarioRepository.findById(idUsuario)).thenReturn(Optional.of(usuario));
         Mockito.when(cursoRepository.findById(idCurso)).thenReturn(Optional.of(curso));
+    
+        ResponseEntity<Object> response = usuarioCursoController.adicionarCurso(idUsuario, idCurso);
+    
+        Assertions.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+    
+        Assertions.assertThat(response.getBody()).isEqualTo("Curso adicionado com sucesso");
+
+        Assertions.assertThat(usuario.getCursos()).contains(curso);
     
         Mockito.verify(usuarioRepository, Mockito.times(1)).save(usuario);
     }
