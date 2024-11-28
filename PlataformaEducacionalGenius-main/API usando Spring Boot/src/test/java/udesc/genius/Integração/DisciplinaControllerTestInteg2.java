@@ -36,7 +36,6 @@ class DisciplinaControllerTestInteg2 {
 
     @BeforeEach
     void setup() {
-        // Criando o professor
         professor = new UsuarioModel();
         professor.setNome("Paolo Moser");
         professor.setTipo(2); // Tipo de professor
@@ -45,7 +44,6 @@ class DisciplinaControllerTestInteg2 {
         professor.setEmail("paolo.moser@teste.com");
         usuarioRepository.save(professor);
 
-        // Criando a disciplina
         disciplina = new DisciplinaModel();
         disciplina.setTitulo("Matemática");
         disciplina.setDescricao("Matéria de Matemática");

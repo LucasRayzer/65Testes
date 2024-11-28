@@ -16,6 +16,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import java.util.ArrayList;
 
 import lombok.Data;
 
@@ -37,4 +38,17 @@ public class CursoModel implements Serializable {
 
     @OneToMany(mappedBy = "curso", orphanRemoval = true)
     private List<DisciplinaModel> disciplinas;
+    
+    public CursoModel(){
+        disciplinas = new ArrayList<>();
+    }
+    
+    public void removeDisciplina(DisciplinaModel disciplina) {
+        this.disciplinas.remove(disciplina);
+    }
+    
+    public void addDisciplina(DisciplinaModel disciplina) {
+        this.disciplinas.add(disciplina);
+    }
+    
 }

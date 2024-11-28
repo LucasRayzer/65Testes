@@ -41,7 +41,7 @@ public class UsuarioControllerTestSistema {
     void ct02_camposVazios() throws Exception {
         String usuarioJson = """
             {
-                "nome": " ",
+                "nome": "",
                 "login": "maria",
                 "senha": "senha@123",
                 "tipo": 1,

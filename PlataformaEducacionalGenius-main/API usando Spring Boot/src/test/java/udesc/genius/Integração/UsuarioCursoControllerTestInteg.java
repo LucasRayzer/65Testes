@@ -49,7 +49,7 @@ class UsuarioCursoControllerTestInteg {
         aluno.setLogin("lucas_rayzer");
         aluno.setSenha("senha123");
         aluno.setEmail("lucas@example.com");
-        aluno.setTipo(1); // Tipo 1 para aluno
+        aluno.setTipo(1); 
         aluno = usuarioRepository.save(aluno);
         alunoId = aluno.getIdUsuario();
     }
